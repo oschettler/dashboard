@@ -1,0 +1,59 @@
+screens:
+ - name: apps
+   title: Apps
+   duration: 10
+   widgets:
+    - name: ios
+      title: iOS News App
+      type: table
+      title_column: true
+      data:
+       - [ 'Current release', '{{ apps.news.platforms.ios.distributions.apple.releases.latest.tag }}' ]
+       - [ 'date', '{{ apps.news.platforms.ios.distributions.apple.releases.latest.release_date }}' ]
+       - [ 'iOS<12', '{{ apps.news.platforms.ios.distributions.apple.releases.ios10.tag }}' ]
+       - [ 'date', '{{ apps.news.platforms.ios.distributions.apple.releases.ios10.release_date }}' ]
+    - name: android
+      title: Android News App
+      type: table
+      title_column: true
+      data:
+       - [ 'Current release', '{{ apps.news.platforms.android.distributions.google.releases.latest.tag }}' ]
+       - [ 'date', '{{ apps.news.platforms.android.distributions.google.releases.latest.release_date }}' ]
+ - name: week
+   title: Week 2021-31
+   duration: 5
+   widgets:
+    - name: visits_version_ios
+      title: "iOS: Visits by version"
+      type: picture
+      caption: "Visits total: 123_456"
+      image: os_ios_2021-31.png
+    - name: visits_version_android
+      title: "Android: Visits by version"
+      type: picture
+      caption: "Visits gesamt: 123_456"
+      image: os_android_2021-31.png
+ - name: timing
+   title: "Sprints & Deadlines"
+   duration: 5
+   widgets:
+    - name: deadlines
+      title: Deadlines
+      type: table
+      title_column: true
+      data:
+       - [ 'Olympia', '2021-07-23 .. -08-08' ]
+    - name: today
+      title: Today
+      type: table
+      title_column: true
+      data:
+       - [ 'Date', '{today}' ]
+       - [ 'Time', '{now}' ]
+    - name: sprint_123
+      title: Sprint 123
+      type: table
+      title_column: true
+      data:
+       - [ 'Starts', '2021-07-01' ]
+       - [ 'Ends', '2021-07-22' ]
