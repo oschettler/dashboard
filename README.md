@@ -9,7 +9,7 @@ The locations for both are defined in config.py.
 
 To easily separate the generic code from my local configuration, I use this setup:
 
-`````bash
+````bash
 mkdir dashboard
 cd dashboard
 git submodule add git@github.com:oschettler/dashboard.git
