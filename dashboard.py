@@ -148,7 +148,7 @@ def show_screen(scr):
 config = yaml.load(
     open('config.yaml'),
     Loader=yaml.FullLoader)
-
+TITLE = config['title'] if 'title' in config else 'Dashboard'
 
 def on_key_down(key, mod, unicode):
     global screen_index, auto, blank
