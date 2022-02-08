@@ -1,2 +1,3 @@
 data_url: 'https://example.com/data.yaml'
 screens_template: screens.mustache
+title: My Team Dashboard
